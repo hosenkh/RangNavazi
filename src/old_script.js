@@ -172,25 +172,25 @@
       x1 = x2 = x3 = x4 = x5 = true;      
       $scope.spc1 = function(){
         x1 = !x1;
-        if ($scope.speed <1) {$scope.speed = 1} else{
-        if ($scope.speed <2.5) {$scope.speed = 2} else{
-        if ($scope.speed <3.5) {$scope.speed = 3} else{
-        if ($scope.speed <4.5) {$scope.speed = 4} else{
-        if ($scope.speed <5.5) {$scope.speed = 5} else{
-        if ($scope.speed <7) {$scope.speed = 6} else{
-        if ($scope.speed <9) {$scope.speed = 8} else{
-        if ($scope.speed <11) {$scope.speed = 10} else{
-        if ($scope.speed <13.5) {$scope.speed = 12} else{
-        if ($scope.speed <15.5) {$scope.speed = 15} else{
-        if ($scope.speed <18) {$scope.speed = 16} else{
-        if ($scope.speed <22) {$scope.speed = 20} else{
-        if ($scope.speed <27) {$scope.speed = 24} else{
-        if ($scope.speed <35) {$scope.speed = 30} else{
-        if ($scope.speed <44) {$scope.speed = 40} else{
-        if ($scope.speed <54) {$scope.speed = 48} else{
-        if ($scope.speed <70) {$scope.speed = 60} else{
-        if ($scope.speed <100) {$scope.speed = 80} else{
-        {$scope.speed = 120} }}}}}}}}}}}}}}}}}}
+        if ($scope.speed <1) {$scope.speed = 1;} else{
+        if ($scope.speed <2.5) {$scope.speed = 2;} else{
+        if ($scope.speed <3.5) {$scope.speed = 3;} else{
+        if ($scope.speed <4.5) {$scope.speed = 4;} else{
+        if ($scope.speed <5.5) {$scope.speed = 5;} else{
+        if ($scope.speed <7) {$scope.speed = 6;} else{
+        if ($scope.speed <9) {$scope.speed = 8;} else{
+        if ($scope.speed <11) {$scope.speed = 10;} else{
+        if ($scope.speed <13.5) {$scope.speed = 12;} else{
+        if ($scope.speed <15.5) {$scope.speed = 15;} else{
+        if ($scope.speed <18) {$scope.speed = 16;} else{
+        if ($scope.speed <22) {$scope.speed = 20;} else{
+        if ($scope.speed <27) {$scope.speed = 24;} else{
+        if ($scope.speed <35) {$scope.speed = 30;} else{
+        if ($scope.speed <44) {$scope.speed = 40;} else{
+        if ($scope.speed <54) {$scope.speed = 48;} else{
+        if ($scope.speed <70) {$scope.speed = 60;} else{
+        if ($scope.speed <100) {$scope.speed = 80;} else{
+        {$scope.speed = 120;} }}}}}}}}}}}}}}}}}}
       };
       $scope.ins1 = function(){
         if (x1) {return {display: 'auto'};} else {return {display: 'none'};}
