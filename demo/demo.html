@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Angular RangNavazi</title>
+  <link rel="stylesheet" type="text/css" href="../src/style.css">
+  <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+</head>
+<body ng-app="mainApp" ng-controller = "mainCtrl" ng-keydown= "key($event)">
+  <h1 style = "text-align: center; font-family: calibri" ng-click = "defaultArrayFill()">Rang Navazi</h1>
+  <form class = "overall">
+    <span ng-click = "spc1()">Lines Per Frame: {{speed}} lines*****</span><input type="text" ng-model = "speed" ng-style = "ins1()"/><!--  -->
+    <span ng-click = "spc2()">Tail length: {{tail}}*****</span><input type="text" ng-model = "tail" ng-style = "ins2()"/><!--  -->
+    <span ng-click = "spc3()">Background R: {{backgroundR}}*****</span><input type="text" ng-model = "backgroundR" ng-style = "ins3()"/><!--  -->
+    <span ng-click = "spc4()">Background G: {{backgroundG}}*****</span><input type="text" ng-model = "backgroundG" ng-style = "ins4()"/><!--  -->
+    <span ng-click = "spc5()">Background B: {{backgroundB}}</span><input type="text" ng-model = "backgroundB" ng-style = "ins5()"/><!--  -->
+  </form>
+  <div class="table">
+    <table ng-click = "tc()">
+      <thead>
+        <th>Channel 1</th>
+        <th>Channel 2</th>
+        <th>Channel 3</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat = "row in ri"><td ng-repeat = "cell in row.cells">{{cell.tex}}<input type="checkbox" ng-model = "cell.check1" ng-style = "sty1(cell)"/><input type="checkbox" ng-model = "cell.check2" ng-style = "sty2(cell)"/><input type="checkbox" ng-model = "cell.check3" ng-style = "sty3(cell)"/></td></tr>
+    
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <div class="container"><div class = "contained1"><div ng-repeat = "bar in main" ng-style= "barStyle(bar)"></div></div></div>
+  <script type="text/javascript" src="../src/old_script.js"></script>
+</body>
+</html>
