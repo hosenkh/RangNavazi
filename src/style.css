@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(127,127,127);
+}
+.overall{
+  height: 60px;
+  padding-left: 100px;
+}
+.overall input{
+  width: 100px;
+}
+.table{
+  height: 290px;
+  /*padding-top: 60px;*/
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.container {
+  height: 135px;
+  position: relative;
+}
+.contained1 {
+  width: 960px;
+  margin: auto;
+  position: relative;
+  margin-top: 50px;
+}
+.contained1 div{
+  width: 2px;
+  height: 100px;
+  float: left;
+
+}
+.test {
+  height: 30px;
+  width: 100px;
+  background-color: #fff;
+}
+.hid {
+  display: none;
+}
+table input {
+  float: right;
+}
+td {
+  padding: 0 20px;
+  font-family: calibri;
+}
+table {
+  margin: auto;
+}
+span {
+  font-family: calibri;
+  font-size: 20px;
+}
